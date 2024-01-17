@@ -13,4 +13,4 @@
   - name: change the directory to /tmp/mycode and then  Build the dockerfile
     command: chdir=/tmp/mycode docker build -t mycepimage01 .
   - name: Runt he Image to deploy app on the container
-    command: docker run -d -P mycepimage01
+    command: docker run -d -p 8080:8080 mycepimage01
